@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Barang</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Daftar Barang</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="about.html">Tentang Kami</a></li>
+                <li><a href="features.html">Fitur</a></li>
+                <li><a href="list.html">Daftar Barang</a></li>
+                <li><a href="add.html">Tambah Barang</a></li>
+                <li><a href="contact.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Barang yang Tersedia</h2>
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Nama Barang</th>
+                    <th>Kategori</th>
+                    <th>Stok</th>
+                    <th>Harga</th>
+                </tr>
+                <?php include('php/list-items.php'); ?>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Manajemen Barang</p>
+    </footer>
+</body>
+</html>
